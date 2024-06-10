@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAYİ TAHMİN</title>
+</head>
+
+<body>
+    <style>
+        body,html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+          
+
+        }
+    
+        .gameArea,
+        .userSayiSecme {
+            text-align: center;
+
+        }
+
+        .gameArea {
+            display: none;
+            margin: 10px;
+
+        }
+
+        #box {
+            height: 30px;
+        }
+
+        input{
+            width: 198px;
+            height: 30px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+        }
+   
+    </style>
+
+
+
+    <div class="game">
+        <div class="gameArea" id="gameArea">
+            <p>Bilgisayarin Tuttuğu Sayi Nedir ? Tahmin Edin</p>
+
+            <input id="userInput" type="number" autocomplete="off" placeholder="">
+
+            <button onclick="gameBtn()">Tahmin Et</button>
+
+            <button onclick="newGameBtn()">Yeni Oyun</button>
+
+            <div id="box"></div>
+
+            <div id="container"></div>
+
+        </div>
+
+
+        <label for="computer" id="computer">
+            <div class="userSayiSecme">
+                <p>Hoş geldiniz! Bilgisayarin 1 ile hangi sayi arasinda bir sayi tutmasini istersiniz?</p>
+
+                <input id="computerNumber" type="number" autocomplete="off">
+
+                <button onclick="computerNumberBtn()">Giriş</button>
+            </div>
+        </label>
+
+    </div>
+
+    </div>
+
+    <script src="Number-Estimation.js"></script>
+
+</body>
+
+</html>
