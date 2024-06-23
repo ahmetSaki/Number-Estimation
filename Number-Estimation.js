@@ -7,9 +7,9 @@ function computerNumberBtn() {
     var gameArea = document.getElementById('gameArea');
     var computer = document.getElementById('computer');
     var computerNumber = document.getElementById("computerNumber").value;
-
-    // Rastgele sayıyı bu adımda oluştur
-    x = Math.floor(Math.random() * computerNumber) + 1; // Kontrol için
+    
+    // RANDOM SAYI OLUŞTUR
+    x = Math.floor(Math.random() * computerNumber) + 1; 
 
     gameArea.style.display = "block";
     computer.style.display = "none";
