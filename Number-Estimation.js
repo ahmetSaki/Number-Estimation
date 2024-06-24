@@ -34,8 +34,7 @@ function gameBtn() {
 if (tahminNum == 0) {
     document.querySelector('button').disabled = true
     mesaj = 'Bilgisayarin Tuttuğu Sayi : ' + x ; 
-    container.textContent = mesaj
-    
+    container.textContent = mesaj 
 }
 
 else
@@ -45,7 +44,6 @@ else
         container.textContent = mesaj
         return;
         userInput.value = ''
-
     }
 
     if (userInput > x ) {
@@ -63,15 +61,10 @@ else
         mesaj = 'TEBRİKLER BİLDİNİZ'
         container.innerText = mesaj
         document.querySelector('button').disabled = true;
-        
-
+    
     }  
-
 }
     
-
-
-
     if (parseInt(userInput) === x) {
         // var userInputTrue = 'Tahmininiz Doğru'
         // container.textContent = userInputTrue;
@@ -89,9 +82,8 @@ else
         var tahminİnfo = 'Kalan Tahmin Sayisi : ' + tahminNum--
         box.innerText = tahminİnfo
     }
-
     document.getElementById("userInput").value = ''
-
+    
 }
 
 function newGameBtn() {
