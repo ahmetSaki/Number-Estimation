@@ -1,5 +1,5 @@
 var x;
-var tahminNum = 10;
+var rightToPredict = 10;
 var userInputNumber = []
 
 
@@ -31,7 +31,7 @@ function gameBtn() {
     console.log(userInputNumber)
 
 
-if (tahminNum == 0) {
+if (rightToPredict == 0) {
     document.querySelector('button').disabled = true
     mesaj = 'Bilgisayarin Tuttuğu Sayi : ' + x ; 
     container.textContent = mesaj 
@@ -79,7 +79,7 @@ else
         // var userInputFalse = 'Tahmininiz Yanlış'
         // container.textContent = userInputFalse;
         console.log(false)
-        var tahminİnfo = 'Kalan Tahmin Sayisi : ' + tahminNum--
+        var tahminİnfo = 'Kalan Tahmin Sayisi : ' + rightToPredict--
         box.innerText = tahminİnfo
     }
     document.getElementById("userInput").value = ''
@@ -92,7 +92,7 @@ function newGameBtn() {
     var computerNumber = document.getElementById("computerNumber").value
 
     x = Math.floor(Math.random() * computerNumber) + 1; // 1 ile 10 arasında rastgele bir sayı üretir
-    tahminNum = 10
+    rightToPredict = 10
     userInputNumber = []
 
     
